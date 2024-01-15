@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obfuscator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Обфускатор JavaScript</h1>
+    </header>
+
+    <main>
+        <div id="toc">
+            <h2>Простой Обфускатор</h2>
+            <p>Обфускация кода - это процесс изменения исходного кода с целью усложнения его восприятия, но без изменения его основной функциональности.</p>
+        </div>
+
+        <div id="output-section">
+            <h2>Обфусцированный код</h2>
+            <div id="output-container"></div>
+            <button onclick="runObfuscatedCode()">Запустить</button>
+        </div>
+
+        <script src="Main.js"></script>
+
+        <script>
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'OutputCode.js', true);
+
+            xhr.onload = function() {
+                if (xhr.status >= 200 && xhr.status < 300) {
+                    // Выводим обфусцированный код в output-container
+                    document.getElementById('output-container').innerHTML = '<pre>' + xhr.responseText + '</pre>';
+
+                    // Сохраняем обфусцированный код для последующего выполнения
+                    var obfuscatedCode = xhr.responseText;
+
+                    // Функция для выполнения обфусцированного кода
+                    window.runObfuscatedCode = function() {
+                        eval(obfuscatedCode);
+                    };
+                } else {
+                    console.error('Ошибка загрузки файла OutputCode.js');
+                }
+            };
+
+            xhr.onerror = function() {
+                console.error('Ошибка загрузки файла OutputCode.js');
+            };
+
+            xhr.send();
+        </script>
+    </main>
+</body>
+</html>
+
+
+
+
+
