@@ -33,8 +33,8 @@ function addVariablesToFile(inputFilePath, outputFilePath, variables) {
     {name: 'total', value: 0}
   ];
 
-  const filePath = 'C:/Users/gosha/OneDrive/Рабочий стол/Obfuscator-main/Obfuscator-main/obfuscator/SourceCode.js';
-  const filePathOutput = 'C:/Users/gosha/OneDrive/Рабочий стол/Obfuscator-main/Obfuscator-main/obfuscator/OutputCode.js';
+  const filePath = 'SourceCode.js';
+  const filePathOutput = 'OutputCode.js';
 
   addVariablesToFile(filePath,filePathOutput, variablesToAdd);
   

@@ -36,5 +36,5 @@ function renameVariablesInFile(filePath) {
     console.error(`Ошибка: ${error.message}`);
   }
 }
-const filePath = 'C:/Users/gosha/OneDrive/Рабочий стол/Obfuscator-main/Obfuscator-main/obfuscator/OutputCode.js';
+const filePath = 'OutputCode.js';
 renameVariablesInFile(filePath);

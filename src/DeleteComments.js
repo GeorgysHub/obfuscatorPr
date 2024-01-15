@@ -11,7 +11,7 @@ function removeCommentsFromFile(filePath) {
 
 }
 
-const filePath = 'C:/Users/gosha/OneDrive/Рабочий стол/Obfuscator-main/Obfuscator-main/obfuscator/OutputCode.js';
-const filePathOutput = 'C:/Users/gosha/OneDrive/Рабочий стол/Obfuscator-main/Obfuscator-main/obfuscator/OutputCode.js';
+const filePath = 'OutputCode.js';
+const filePathOutput = 'OutputCode.js';
 
 removeCommentsFromFile(filePath);

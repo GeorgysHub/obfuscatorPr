@@ -14,6 +14,6 @@ function removeSpacesBetweenLines(filePath) {
   }
 }
 
-const filePath = 'C:/Users/gosha/OneDrive/Рабочий стол/Obfuscator-main/Obfuscator-main/obfuscator/OutputCode.js';
+const filePath = 'OutputCode.js';
 
 removeSpacesBetweenLines(filePath);
