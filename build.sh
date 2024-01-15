@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo firewall-cmd --add-port=3063/tcp
+sudo firewall-cmd --add-port=8080/tcp
 sudo firewall-cmd --add-port=3003/tcp
 sudo firewall-cmd --reload
 
