@@ -1,7 +1,8 @@
 function execute() {
-  require('./src/AddVariables.js');
-  require('./src/DeleteComments.js');
-  require('./src/NameChanger.js');
-  require('./src/Complex/complexMethod.js');
+    require('./src/AddVariables.js');
+    require('./src/DeleteComments.js');
+    require('./src/Name.js');
+    require('./src/Semi.js');
+    require('./src/DeleteSpaces.js');
 }
-execute(); 
+  execute(); 

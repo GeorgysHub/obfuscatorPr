@@ -1,5 +1,5 @@
 FROM node:latest
-COPY ./music/package*.json .
+COPY ./obfuscator/package*.json .
 RUN npm install
-COPY ./music .
-CMD ["npm","run","music"]
+COPY ./obfuscator .
+CMD ["npm","run","obfuscator"]

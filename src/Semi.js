@@ -1,5 +1,4 @@
 const fs = require('fs');
-
 function addSemicolons(filePath) {
     try {
       let content = fs.readFileSync(filePath, 'utf-8');
@@ -12,5 +11,5 @@ function addSemicolons(filePath) {
     }
   }
   const filePath = 'C:/Users/gosha/OneDrive/Рабочий стол/Obfuscator-main/Obfuscator-main/obfuscator/OutputCode.js';
-
+  
   addSemicolons(filePath);
