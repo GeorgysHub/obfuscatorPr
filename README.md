@@ -10,4 +10,4 @@
 - 	✅ `sudo docker compose up`
 
 📌  Адрес:
-- 	✅ `localhost:3063`
+- 	✅ `localhost:8080`
